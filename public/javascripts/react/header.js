@@ -1,21 +1,22 @@
 React.render(
-    <nav className="white" role="navigation">
-        <div className="nav-wrapper container">
-            <a id="logo-container" href="#" className="brand-logo">
-                Teemos
-                <img src="/images/icon.png" />
-            </a>
-            <ul className="right hide-on-med-and-down">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">照片</a></li>
-                <li><a href="#">关于</a></li>
-            </ul>
+    React.createElement("nav", {className: "white", role: "navigation"}, 
+        React.createElement("div", {className: "nav-wrapper container"}, 
+            React.createElement("a", {id: "logo-container", href: "#", className: "brand-logo"}, 
+                "Teemos", 
+                React.createElement("img", {src: "/images/icon.png"})
+            ), 
+            React.createElement("ul", {className: "right hide-on-med-and-down"}, 
+                React.createElement("li", null, React.createElement("a", {href: "#"}, "首页")), 
+                React.createElement("li", null, React.createElement("a", {href: "#"}, "照片")), 
+                React.createElement("li", null, React.createElement("a", {href: "#"}, "关于"))
+            ), 
 
-            <ul id="nav-mobile" className="side-nav">
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" className="button-collapse"><i className="material-icons">menu</i></a>
-        </div>
-    </nav>,
+            React.createElement("ul", {id: "nav-mobile", className: "side-nav"}, 
+                React.createElement("li", null, React.createElement("a", {href: "#"}, "Navbar Link"))
+            ), 
+            React.createElement("a", {href: "#", "data-activates": "nav-mobile", className: "button-collapse"}, React.createElement("i", {className: "material-icons"}, "menu"))
+        )
+    ),
     document.getElementById('app-header')
 );
+
