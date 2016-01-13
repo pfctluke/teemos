@@ -5,5 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('index.ejs');
 });
+router.get('/ad', function(req, res) {
+    res.render('ad.ejs');
+});
 
 module.exports = router;
