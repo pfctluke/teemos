@@ -9,9 +9,34 @@ $logo-font: cursive;
 #logo-container{
     font-family: $logo-font;
 }
+#demo-canvas{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.nav-wrapper{
+    .right-nav{
+        float: right;
+        margin-left: 30px;
+    }
+}
 
-
-
+// 登录注册页面
+body.sign{
+    background: url("/images/sign_background.png");
+    background-size: cover;
+    padding-bottom: 0;
+}
+.sign_page{
+    .form_container{
+        width: 360px;
+        margin: 50px auto;
+        background-color: rgba(255,255,255,0.8);
+    }
+    .input-field label{
+        left: 0;
+    }
+}
 
 
 

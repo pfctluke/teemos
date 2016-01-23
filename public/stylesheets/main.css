@@ -7,4 +7,25 @@
 #logo-container {
   font-family: cursive; }
 
+#demo-canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0; }
+
+.nav-wrapper .right-nav {
+  float: right;
+  margin-left: 30px; }
+
+body.sign {
+  background: url("/images/sign_background.png");
+  background-size: cover;
+  padding-bottom: 0; }
+
+.sign_page .form_container {
+  width: 360px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8); }
+.sign_page .input-field label {
+  left: 0; }
+
 /*# sourceMappingURL=main.css.map */
